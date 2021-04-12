@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularTimer">
+        <attr name="enabled" format="boolean" />
+
+        <attr name="ringColor" format="color" />
+        <attr name="ringAlpha" format="integer" />
+        <attr name="ringWidth" format="float" />
+        <attr name="showInnerCircle" format="boolean" />
+        <attr name="innerCircleColor" format="color" />
+        <attr name="showIndicator" format="boolean" />
+
+        <attr name="progress" format="integer" />
+        <attr name="min" format="float" />
+        <attr name="max" format="float" />
+        <attr name="defaultValue" format="float" />
+        <attr name="increment" format="integer"/>
+        <attr name="turnValue" format="integer"/>
+
+        <attr name="progressTextColor" format="color" />
+        <attr name="progressTextSize" format="dimension" />
+        <attr name="progressIsEditable" format="boolean" />
+        <attr name="showProgressText" format="boolean" />
+
+        <attr name="unitText" format="string"/>
+        <attr name="unitTextColor" format="color" />
+        <attr name="unitTextSize" format="dimension" />
+        <attr name="showUnitText" format="boolean" />
+
+        <attr name="resetButtonSize" format="dimension" />
+        <attr name="showResetButton" format="boolean" />
+
+        <attr name="isTime" format="boolean" />
+
+    </declare-styleable>
+</resources>

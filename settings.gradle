@@ -1,0 +1,3 @@
+include ':timelyview'
+include ':app'
+rootProject.name = "Sieste"

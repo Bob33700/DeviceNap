@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DeviceNap</string>
+    <string name="settings">SETTINGS</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="info000"><![CDATA[DeviceNap permet de mettre votre appareil en mode silencieux pendant une durée choisie (événement, réunion, sieste…)
+        <br>
+        <br>Pour choisir la durée : \'touchez-glissez\' le cadran
+        <br>    Le mode silencieux démarre automatiquement
+        <br> 
+        <br>Le bouton en bas permet de choisir le mode :
+        <br>\t- <i><b>vibreur</b></i>_ sortie en <i><b>sonnerie</b></i>
+        <br>\t- <i><b>muet</b></i>___ sortie en <i><b>vibreur</b></i>
+        <br>\t- <i><b>muet</b></i>___ sortie en <i><b>sonnerie</b></i>
+        <br>
+        <br>Le bouton <b>STOP</b> interromp le décompte et restaure la sonnerie]]>
+    </string>
+    <string name="credits"><![CDATA[
+        <i>Remerciements à David Langille  pour son image
+        \'Power Nap\' dont je me suis fortement inspiré pour créer le fond d\'écran de DeviceNap
+        <br>(http://riddlingdreams.deviantart.com)</i>]]>
+    </string>
+    <string name="channel_name">DeviceNapChannel</string>
+    <string name="channel_description">Device Nap Channel</string>
+    <string name="cancel">STOP</string>
+
+    <string name="permission_fragment_title">Permission nécessaire</string>
+    <string name="permission_fragment_text">Merci d\'autoriser DeviceNap à gérer le mode "Ne pas déranger"</string>
+</resources>

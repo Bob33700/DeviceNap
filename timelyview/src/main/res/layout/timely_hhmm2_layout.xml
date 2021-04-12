@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <!-- Hours -->
+        <com.bluegecko.timelyview.TimelyView
+            android:id="@+id/ttv_hours_left"
+            style="@style/TimelyTimeViewStyle"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <com.bluegecko.timelyview.TimelyView
+            android:id="@+id/ttv_hours_right"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintHorizontal_bias=".3"
+            app:layout_constraintVertical_bias=".3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.bluegecko.timelyview.TimelyView
+                android:id="@+id/ttv_minutes_left"
+                style="@style/TimelyTimeViewStyle"
+                android:layout_weight="3"/>
+
+            <com.bluegecko.timelyview.TimelyView
+                android:id="@+id/ttv_minutes_right"
+                style="@style/TimelyTimeViewStyle"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

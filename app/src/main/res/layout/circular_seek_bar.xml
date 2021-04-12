@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    tools:ignore="Autofill,ContentDescription,HardcodedText,LabelFor,Overdraw">
+
+    <com.bluegecko.timelyview.TimelyHHMM2View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background"
+        android:alpha=".25"
+        app:layout_constraintTop_toTopOf="@+id/ring"
+        app:layout_constraintBottom_toBottomOf="@+id/ring"/>
+
+    <com.bluegecko.sieste.CircularTimerRing
+        android:id="@+id/ring"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintVertical_bias=".35"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.bluegecko.timelyview.TimelyHHMM2View
+        android:id="@+id/csbProgressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleX=".7"
+        android:scaleY="1.2"
+        app:layout_constraintTop_toTopOf="@+id/ring"
+        app:layout_constraintBottom_toBottomOf="@+id/ring"/>
+
+    <View
+        android:id="@+id/fillerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/filler"
+        android:alpha=".25"
+        app:layout_constraintTop_toBottomOf="@id/ring"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:alpha=".5"
+        android:background="@color/redDark"
+        android:gravity="center"
+        android:text="STOP"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="5:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/csbProgressTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
